@@ -127,6 +127,7 @@ h1{
     align-items: center;
     position: relative;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .home_subtitulo h2{
@@ -191,6 +192,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 .img_categoria2{
@@ -216,3 +218,36 @@ h1{
     padding: 20px 10px;
     font-size: 24px;
 }
+
+/* ---------footer--------- */
+
+footer{
+    background-color: #fff4f4;
+    height: 110px;
+    display: flex;
+    align-items: center;
+}
+
+
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_footer{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+}
+.footer_container span,
+.nav_footer a{
+     font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 500;
+}
+
+.nav_footer a{
+    text-decoration: none;
+    color: #747878;
+}
+
