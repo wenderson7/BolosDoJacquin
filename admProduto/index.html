@@ -7,10 +7,10 @@
     <title>Bolos do jacquin - Adm</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -32,11 +32,81 @@
                 <span>Commencer</span>
                 <hr>
             </a>
+
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 640"><!--! Font Awesome Pro 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc. -->
+                    <path fill="currentColor"
+                        d="M360 128L116.3 320L544 320C544 192 432 128 360 128zM64 336C64 326.2 68.5 316.9 76.2 310.9L340.2 102.9C345.8 98.5 352.8 96 360 96C404.3 96 457.6 115.2 499.9 151.8C543.1 189.2 576 245.7 576 320L576 480C576 515.3 547.3 544 512 544L128 544C92.7 544 64 515.3 64 480L64 336zM96 416L544 416L544 352L96 352L96 416zM96 448L96 480C96 497.7 110.3 512 128 512L512 512C529.7 512 544 497.7 544 480L544 448L96 448z" />
+                </svg>
+            </button>
         </div>
     </header>
 
     <main>
+        <h1>pagina administrativa - bolos do jacquin</h1>
+        <section class="cad_produtos">
+            <div class="container cad_container">
+                <img class="icon_jacquin" src="../img/Logo Bolos do Jacquin.png" alt="">
+                <div class="box_h2">
+                    <h2>Cadastro de Produtos</h2>
+                    <span>Enregistrement du Produit</span>
+                    <hr>
+                </div>
 
+                <form action="">
+                    <div class="inputs_form">
+                        <div class="form_coluna1">
+                            <div class="linha_form">
+                                <label for="">nome</label>
+                                <input placeholder="Ex: Opera Eternelle" type="text" name="" id="">
+                            </div>
+
+                            <div class="linha_form">
+                                <div class="input_cat">
+                                    <label for="">categorias</label>
+                                    <input type="button" placeholder="Ex: Cafe, Chocolate, Bolos">
+                                </div>
+                                <div class="input_img">
+                                    <span>imagem</span>
+                                    <label for="img">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 640 640"><!--! Font Awesome Pro 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc. -->
+                                            <path fill="currentColor"
+                                                d="M360 128L116.3 320L544 320C544 192 432 128 360 128zM64 336C64 326.2 68.5 316.9 76.2 310.9L340.2 102.9C345.8 98.5 352.8 96 360 96C404.3 96 457.6 115.2 499.9 151.8C543.1 189.2 576 245.7 576 320L576 480C576 515.3 547.3 544 512 544L128 544C92.7 544 64 515.3 64 480L64 336zM96 416L544 416L544 352L96 352L96 416zM96 448L96 480C96 497.7 110.3 512 128 512L512 512C529.7 512 544 497.7 544 480L544 448L96 448z" />
+                                        </svg>
+                                    </label>
+                                    <input type="file" name="img" id="">
+                                </div>
+                            </div>
+
+                            <div class="linha_form">
+                                <label for="">Descrição curta</label>
+                                <textarea placeholder="Ex: O classico parisiense: café arábica, chocolate amargo e biscuit joconde."  name="" id="" rows="2" ></textarea>
+                            </div>
+                        </div>
+                        <div class="form_coluna2">
+                            <div class="linha_form">
+                                <div class="input_valor">
+                                    <label for="">valor por quilo</label>
+                                    <input type="file" name="" id="">
+                                </div>
+
+                                <div class="input_ativo" > 
+                                    <label for="">ativo</label>
+                                    <input type="checkbox" name="" id="">
+                                </div>
+                            </div>
+                            <div class="linha_form">
+                                <label for="">Descrição longa</label>
+                                <textarea name="" id="" rows="7"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="button" value="cadastrar">
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
