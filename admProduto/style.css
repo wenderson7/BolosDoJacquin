@@ -8,6 +8,7 @@
     --corPrincipal:#fff4f4;
     --fontHanken: "Hanken Grotesk", sans-serif;
     --corDourado: #c5a028;
+    --corSecundaria: #fdf8f8;
 }
 
 .container{
@@ -160,7 +161,7 @@ form{
 }
 
 .lf_linha{
-    display: flex;
+    display: flex; 
 }
 
 .input_img svg{
@@ -168,7 +169,8 @@ form{
 }
 .form_coluna1,
 .form_coluna2{
-    width: 414px;
+    max-width: 414px;
+    width: 80%;
 }
 
 .input_img span,
@@ -177,7 +179,7 @@ form label{
     text-transform: uppercase;
     color: #444444;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 5px;
 }
 
@@ -219,23 +221,62 @@ form input[type=text]{
     height: 25px;
 }
 
+.input_cat{
+    width: 79%;
+}
+
 .input_cat input{
-    width: 314px;
+    max-width: 314px;
     margin-right: 20px;
 }
+
+.input_valor{
+    width: 91%;
+}
+
 .input_valor input{
     margin-right: 20px;
-    width: 360px;
+    max-width: 360px;
 }
 
 form input[type=button]{
-    margin-bottom:100px auto 0;
+    margin:100px auto 0;
     display: block;
+    font-family: var(--fontHanken);
     background-color: #000000;
     color: #ffffff;
     text-transform: uppercase;
-    font-size: var(--fontHanken);
-    padding: 10px;
+    font-size: 12px;
+    padding: 16px 55px;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+/* -------- lista de produtos-------- */
+
+.list_produtos{
+    background-color: var(--corSecundaria);
+}
+
+table{
+    background-color: aquamarine;
+    width: 100%;
+    font-family: var(--fontHanken);
+    text-transform: uppercase;
+}
+
+thead{
+    font-size: 12px;
+    font-weight: 600;
+    color: #444444;
+}
+
+tbody{
+    color: #aaaaaa;
+}
+
+table svg{
+    width: 35px;
 }
 
 /* ----------MEDIAS-------- */
@@ -244,7 +285,8 @@ form input[type=button]{
     .header_container button{
         display: block;
     }
-    .link_inicio
+
+    .link_inicio,
     .box_buscar{
         display: none;
     }
@@ -252,14 +294,28 @@ form input[type=button]{
     .box_h2 h2 {
         font-size: 32px;
     }
+
     .box_h2 span{
         font-size: 20px;
         bottom: -18px; 
         margin-bottom: 20px ;
     }
+
     .box_h2 hr{
         margin-top: 10px;
         width: 70%;
+    } 
+
+    .inputs_form{
+        flex-direction: column;
+        align-items: center;
+    } 
+    
+    .form_coluna1,
+    .form_coluna2{
+    max-width: 500px;
+    width: 80%;
     }
+
 }
     
